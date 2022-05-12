@@ -98,3 +98,20 @@ void strmix(char *src, char *dest)
         }
         dest[j] = '\0';
 }
+
+
+**
+* strleng - measures a length of a string
+* @s: a string location pointer
+*
+* Return: returns length
+*/
+int strleng(char *s)
+{
+        int len = 0;
+        while (s[len] != '\0')
+        {
+                len++;
+        }
+        return (len);
+}
