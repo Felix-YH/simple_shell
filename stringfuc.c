@@ -48,3 +48,25 @@ int getstr(char *str)
         free(line);
         return (1);
 }
+
+/**
+ * strcopy - a function to copy to strings
+ * @src: the string to be copied
+ * @dest: the destination of the copied string
+ *
+ * Return: returns nothing (void)
+ */
+        void strcopy(char *src, char *dest)
+{
+        int i = 0;
+        int j = 0;
+        if (!dest)
+        {
+                j = 0;
+        }
+        while (src[i] != '\0' && src[i] != '\n')
+        {
+                dest[j++] = src[i++];
+        }
+        dest[j] = '\0';
+}
