@@ -70,3 +70,31 @@ int getstr(char *str)
         }
         dest[j] = '\0';
 }
+
+
+/**
+* strmix - a function to copy to strings and concatenate if
+*        the destination have a string already.
+* @src: the string to be copied
+* @dest: the destination of the copied string
+*
+* Return: returns nothing (void)
+*/
+void strmix(char *src, char *dest)
+{
+        int i = 0;
+        int j;
+        if (!dest)
+        {
+                j = 0;
+        }
+        else
+        {
+                j = strleng(dest);
+        }
+        while (src[i] != '\0' && src[i] != '\n')
+        {
+                dest[j++] = src[i++];
+        }
+        dest[j] = '\0';
+}
