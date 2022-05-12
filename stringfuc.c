@@ -106,6 +106,7 @@ void strmix(char *src, char *dest)
 *
 * Return: returns length
 */
+
 int strleng(char *s)
 {
         int len = 0;
