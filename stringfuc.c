@@ -116,3 +116,34 @@ int strleng(char *s)
         }
         return (len);
 }
+
+
+/**
+* strcomp - a function to compare two strings
+* @str: the first string to compare
+* @equ: the secodn string to comapre too
+*
+* Return: returns an integer indicater of the boolean
+*/
+int strcomp(char *str, char *equ)
+{
+        int i = 0;
+        int result = 0;
+        if (str == NULL || equ == NULL)
+        {
+                return (0);
+        }
+        while (equ[i] != '\0' || str[i] != '\0')
+        {
+                if (str[i] == equ[i])
+                {
+                        result = 1;
+                }
+                else
+                {
+                        result = 0;
+                }
+                i++;
+        }
+        return (result);
+}
