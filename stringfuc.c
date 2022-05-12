@@ -100,7 +100,7 @@ void strmix(char *src, char *dest)
 }
 
 
-**
+/**
 * strleng - measures a length of a string
 * @s: a string location pointer
 *
