@@ -74,3 +74,34 @@ int _getline(char **line, size_t *len)
 
         return (*len);
 }
+
+/**
+ * echoer - a function to echo back any text you gave it
+ * @line: an array of command and arguments
+ *
+ * Return: returns 1 in success and -1 if it fails
+ */
+
+int echoer(char *line[])
+{
+        int i = 1;
+
+        if (line[i] == NULL)
+        {
+                write(1, "\n", 2);
+                return (1);
+        }
+
+        while (line[i] != NULL)
+        {
+                write(1, line[i], strleng(line[i]));
+                i++;
+                if (line[i] != NULL)
+                {
+                        write(1, " ", 2);
+                }
+        }
+        write(1, "\n", 2);
+
+        return (1);
+}
