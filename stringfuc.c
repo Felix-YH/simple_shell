@@ -1,4 +1,4 @@
-#include "simishell.h"
+#include "shell.h"
 
 /**
 * getstr - a function to read a string from  the cli
