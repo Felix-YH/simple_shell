@@ -1,4 +1,4 @@
-#include "simishell.h"
+#include "shell.h"
 
 /**
  * strcomp - a function to compare two strings
