@@ -1,4 +1,4 @@
-#include "simishell.h"
+#include "shell.h"
 
 /**
 * exitor - a function to exit from the program
