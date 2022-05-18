@@ -1,4 +1,4 @@
-#include "simishell.h"
+#include "shell.h"
 
 /**
  * getfunc - a function which selects a function based on the commands
