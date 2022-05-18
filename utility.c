@@ -1,4 +1,4 @@
-#include "simishell.h"
+#include "shell.h"
 
 /**
  * envir - a function which excutes the /bin/ls program to list files
