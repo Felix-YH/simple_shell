@@ -11,6 +11,7 @@
 #include <signal.h>
 
 extern int errno;
+extern char **environ
 /**
 * struct selectfunction - a struct array of functions
 * @command: a pointer to the caharacter of the command string
