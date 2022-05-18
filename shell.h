@@ -18,9 +18,9 @@ extern int errno;
 */
 typedef struct selectfunction
 {
-  char *command;
-  int (*funcptr)(char **line);
-}selecte;
+	char *command;
+	int (*funcptr)(char **line);
+} selecte;
 void sigintHandler(int sig_num __attribute__((unused)));
 void printprompt(int i);
 int getstr(char *str);
@@ -37,4 +37,4 @@ int shellprocessor(char **line, char **argv);
 char **strbrk(char *line, char c);
 char *stringer(char *line, int i, char *str, char c);
 
-#endif /* SIMPLE_SHELLY */ 
+#endif /* SIMPLE_SHELLY */
